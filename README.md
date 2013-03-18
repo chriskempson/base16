@@ -2,6 +2,9 @@
 Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications.  
 Base16 is both a color scheme and a template. To roll your own see [base16-builder](https://github.com/chriskempson/base16-builder).
 
+## Preview
+To preview the various base16 themes visit http://chriskempson.github.com/base16 - Preview page courtesy of [tybenz](http://tybenz.com).
+
 ![Base16 Default](https://raw.github.com/chriskempson/base16/master/base16-default.png)
 Base16's default color scheme.
 
