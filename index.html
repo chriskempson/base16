@@ -1,54 +1,46 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html">
-    <title>Base16 Tomorrow</title>
-    <style type="text/css" media="screen">
-      body { margin: 5% 20%; }
-      .scheme, .author, pre, .block { font-family: "menlo", monospace; }
-  	  .block { display: inline-block; font-size: 13px; font-weight: bold; padding: 15px; margin: 0 5px 10px 0; }
-  	  pre {
-  	    font-size: 14px;
-  	    padding: 10px 20px;
-  	  }
-  	  
-      .base00-background { background-color: #1d1f21; }
-      .base01-background { background-color: #282a2e; }
-      .base02-background { background-color: #373b41; }
-      .base03-background { background-color: #969896; }
-      .base04-background { background-color: #b4b7b4; }
-      .base05-background { background-color: #c5c8c6; }
-      .base06-background { background-color: #e0e0e0; }
-      .base07-background { background-color: #ffffff; }
-      .base08-background { background-color: #cc6666; }
-      .base09-background { background-color: #de935f; }
-      .base0A-background { background-color: #f0c674; }
-      .base0B-background { background-color: #b5bd68; }
-      .base0C-background { background-color: #8abeb7; }
-      .base0D-background { background-color: #81a2be; }
-      .base0E-background { background-color: #b294bb; }
-      .base0F-background { background-color: #a3685a; }
-      
-      .base00 { color: #1d1f21; }
-      .base01 { color: #282a2e; }
-      .base02 { color: #373b41; }
-      .base03 { color: #969896; }
-      .base04 { color: #b4b7b4; }
-      .base05 { color: #c5c8c6; }
-      .base06 { color: #e0e0e0; }
-      .base07 { color: #ffffff; }
-      .base08 { color: #cc6666; }
-      .base09 { color: #de935f; }
-      .base0A { color: #f0c674; }
-      .base0B { color: #b5bd68; }
-      .base0C { color: #8abeb7; }
-      .base0D { color: #81a2be; }
-      .base0E { color: #b294bb; }
-      .base0F { color: #a3685a; }
-    </style>
+    <meta charset="utf-8">
+    <title>Base16</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/base16-chalk.css" type="text/css" /> -->
+    <link id="scheme" rel="stylesheet" href="css/base16-default.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/base16-eighties.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/base16-greenscreen.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/base16-mocha.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/base16-monokai.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/base16-ocean.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/base16-railscasts.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/base16-solarized.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/base16-tomorrow.css" type="text/css" /> -->
+
+    <script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/switch.js" charset="utf-8"></script>
   </head>
   <body>
-    <h1 class="scheme">Base16 Tomorrow</h1>
+    <div id="scheme-select" class="base00-background default">
+      <div class="current-scheme base07">Pick One!</div>
+      <div class="triangle"></div>
+      <ul class="scheme-list">
+        <li class="base0F"><a href="#chalk">Chalk</a></li>
+        <li class="base0E"><a href="#default">Default</a></li>
+        <li class="base0D"><a href="#eighties">Eighties</a></li>
+        <li class="base0C"><a href="#greenscreen">Greenscreen</a></li>
+        <li class="base0B"><a href="#mocha">Mocha</a></li>
+        <li class="base0A"><a href="#monokai">Monokai</a></li>
+        <li class="base09"><a href="#ocean">Ocean</a></li>
+        <li class="base08"><a href="#railscasts">Railscasts</a></li>
+        <li class="base06"><a href="#solarized">Solarized</a></li>
+        <li class="base05"><a href="#tomorrow">Tomorrow</a></li>
+      </ul>
+    </div>
+    <h1>
+      <img alt="Base 16" src="base16-logo.png" />
+    </h1>
     <p class="author">Chris Kempson (http://chriskempson.com)</p>
+    <h1 class="scheme">Preview: Default</h1>
     <div>
       <div class="block base00-background base07">00</div>
       <div class="block base01-background base07">01</div>
@@ -133,3 +125,4 @@
     </div>
   </body>
 </html>
+

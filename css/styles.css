@@ -1,0 +1,55 @@
+body { margin: 5% 20%; }
+body, .scheme, .author, pre, .block {
+  font-family: "menlo", monospace;
+}
+.author {
+  font-size: 17px;
+}
+.block {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 0 5px 10px 0;
+}
+pre {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+a {
+  color: inherit;
+}
+
+#scheme-select {
+  float: right;
+  padding: 20px;
+  width: 140px;
+  cursor: pointer;
+  position: relative;
+  top: 23px;
+}
+
+#scheme-select:hover .scheme-list {
+  display: block;
+}
+
+.scheme-list {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+.scheme-list li {
+  margin: 2px 0;
+}
+
+.triangle {
+  position: absolute;
+  top: 26px;
+  right: 23px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-top: 6px solid #fff;
+  border-right: 6px solid transparent;
+}
