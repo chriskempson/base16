@@ -24,6 +24,8 @@ Check out the individual repositories for screenshots of Base16 in action.
 * [Gnome Terminal](https://github.com/chriskempson/base16-gnome-terminal)
 * [Emacs](https://github.com/neil477/base16-emacs)
 * [Geany](https://github.com/robloach/base16-geany)
+* [Windows Command Prompt](https://github.com/geoffstokes/base16-windows-command-prompt)
+* [MinTTY](https://github.com/geoffstokes/base16-mintty)
 
 ## Contributing
 Please submit any issues and/or pull requests to the appropriate [repository](https://github.com/chriskempson/base16#repositories). No pull requests shall be merged into this repository.
@@ -32,3 +34,4 @@ Please submit any issues and/or pull requests to the appropriate [repository](ht
 * [chriskempson](https://github.com/chriskempson) - Base 16 Builder, Vim, Shell, iTerm2, TextMate, OSX Color Palette, Xresources, Mou, XFCE4 Terminal, Gimp Palette, Gnome Terminal
 * [neil477](https://github.com/neil477) - Emacs
 * [robloach](https://github.com/robloach) - Geany
+* [geoffstokes](https://github.com/geoffstokes) - Windows Command Prompt, MinTTY
