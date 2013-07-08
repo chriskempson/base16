@@ -26,6 +26,7 @@ Check out the individual repositories for screenshots of Base16 in action.
 * [Geany](https://github.com/robloach/base16-geany)
 * [Windows Command Prompt](https://github.com/geoffstokes/base16-windows-command-prompt)
 * [MinTTY](https://github.com/geoffstokes/base16-mintty)
+* [Notepad++](https://github.com/idleberg/base16-notepad-plus-plus)
 
 ## Contributing
 Please submit any issues and/or pull requests to the appropriate [repository](https://github.com/chriskempson/base16#repositories). No pull requests shall be merged into this repository.
