@@ -44,6 +44,7 @@ To add your own template, submit a pull request to https://github.com/chriskemps
 * [Rofi](https://github.com/0xdec/base16-rofi) maintained by [0xdec](https://github.com/0xdec)
 * [Shell](https://github.com/chriskempson/base16-shell) maintained by [chriskempson](https://github.com/chriskempson)
 * [Scide](https://github.com/brunoro/base16-scide) maintained by [brunoro](https://github.com/brunoro)
+* [Snazzy](https://github.com/gretzky/snazzy) maintained by [gretzky](https://github.com/gretzky)
 * [st](https://github.com/honza/base16-st) maintained by [honza](https://github.com/honza)
 * [StumpWM](https://github.com/tpine/base16-stumpwm) maintained by [tpine](https://github.com/tpine)
 * [CSS, Less, Sass/Scss & Stylus](https://github.com/samme/base16-styles) maintained by [samme](https://github.com/samme)
