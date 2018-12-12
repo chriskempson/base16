@@ -95,6 +95,7 @@ To add your own scheme, submit a pull request to https://github.com/chriskempson
 * [PaperColor](https://github.com/jonleopard/base16-papercolor-scheme) maintained by [jonleopard](https://github.com/jonleopard)
 * [Porple](https://github.com/AuditeMarlow/base16-porple-scheme) maintained by [AuditeMarlow](https://github.com/AuditeMarlow)
 * [Rebecca](https://github.com/vic/base16-rebecca) maintained by [vic](https://github.com/vic)
+* [Sig](https://github.com/sorenbug/base16-sig-scheme) maintained by [sorenbug](https://github.com/sorenbug)
 * [Snazzy](https://github.com/h404bi/base16-snazzy-scheme) maintained by [h404bi](https://github.com/h404bi)
 * [Solarflare](https://github.com/mnussbaum/base16-solarflare-scheme) maintained by [mnussbaum](https://github.com/mnussbaum)
 * [Solarized](https://github.com/aramisgithub/base16-solarized-scheme) maintained by [aramisgithub](https://github.com/aramisgithub)
