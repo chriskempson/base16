@@ -58,7 +58,7 @@ To add your own template, submit a pull request to https://github.com/chriskemps
 * [Sway](https://github.com/rkubosz/base16-sway) maintained by [rkubosz](https://github.com/rkubosz)
 * [Termite](https://github.com/khamer/base16-termite) maintained by [khamer](https://github.com/khamer)
 * [Termux](https://github.com/kdrag0n/base16-termux) maintained by [kdrag0n](https://github.com/kdrag0n)
-* [Textadept](https://github.com/rgieseke/base16-textadept) maintained by [rgieseke]( https://github.com/rgieseke/)
+* [Textadept](https://github.com/rgieseke/base16-textadept) maintained by [rgieseke]( https://github.com/rgieseke)
 * [TextMate & Sublime Text](https://github.com/chriskempson/base16-textmate) maintained by [chriskempson](https://github.com/chriskempson)
 * [Tilix](https://github.com/karlding/base16-tilix) maintained by [karlding](https://github.com/karlding)
 * [Vim](https://github.com/chriskempson/base16-vim) maintained by [chriskempson](https://github.com/chriskempson)
