@@ -24,6 +24,7 @@ To add your own template, submit a pull request to https://github.com/chriskemps
 * [CSS, Less, Sass/Scss & Stylus](https://github.com/samme/base16-styles) maintained by [samme](https://github.com/samme)
 * [Dunst](https://github.com/khamer/base16-dunst) maintained by [khamer](https://github.com/khamer)
 * [Emacs](https://github.com/belak/base16-emacs) maintained by [belak](https://github.com/belak)
+* [fish](https://github.com/tomyun/base16-fish) maintained by [tomyun](https://github.com/tomyun)
 * [fzf](https://github.com/nicodebo/base16-fzf) maintained by [nicodebo](https://github.com/nicodebo)
 * [Gnome Terminal](https://github.com/aaron-williamson/base16-gnome-terminal) maintained by [aaron-williamson](https://github.com/aaron-williamson)
 * [Godot](https://github.com/Calinou/base16-godot) maintained by [Calinou](https://github.com/Calinou)
@@ -195,4 +196,3 @@ If you've written a tool for base16 feel free to add it to the list below:
 * [Harmonic16](http://janniks.github.io/harmonic16) - A color generator for harmonic Base16 color-schemes.
 * [Duotone-base16](https://github.com/davidosomething/duotone-base16/) - A Duotone scheme to Base16 convertor.
 * [terminal.sexy](https://terminal.sexy/) - Terminal Color Scheme Designer
-
