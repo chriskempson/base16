@@ -114,6 +114,7 @@ To add your own scheme, submit a pull request to https://github.com/chriskempson
 * [Material Vivid](https://github.com/joshyrobot/base16-material-vivid-scheme) maintained by [joshyrobot](https://github.com/joshyrobot)
 * [Mellow](https://github.com/gidsi/base16-mellow-scheme) maintained by [gidsi](https://github.com/gidsi)
 * [Mexico-Light](https://github.com/drzel/base16-mexico-light-scheme) maintained by [drzel](https://github.com/drzel)
+* [Nebula](https://github.com/Misterio77/base16-nebula-scheme) maintained by [Misterio77](https://github.com/Misterio77)
 * [Nord](https://github.com/8-uh/base16-nord-scheme) maintained by [8-uh](https://github.com/8-uh)
 * [Nova](https://github.com/gessig/base16-nova-scheme) maintained by [gessig](https://github.com/gessig)
 * [One Light](https://github.com/purpleKarrot/base16-one-light-scheme) maintained by [purpleKarrot](https://github.com/purpleKarrot)
