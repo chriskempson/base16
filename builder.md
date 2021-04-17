@@ -1,23 +1,31 @@
 # Builder Guidelines
-**Version 0.9.1**
+**Version 0.10.0**
 
-A base16 builder is an application that can build syntax highlighting definition files for text editors by using base16 scheme files which contain a collection of colours and base16 template files which contain syntax highlighting rules. A builder uses Git as the mechanism to download and keep up-to-date syntax files and template files.
+A base16 builder is an application that can build syntax highlighting definition files for text editors by using base16 scheme files which contain a collection of colours and base16 template files which contain syntax highlighting rules.
+
+Builders are designed for theme maintainers' ease of use. Theme maintainers should provide built versions of their theme so the end user doesn't need to be aware of the builder.
 
 ## File Structure
-- `/` - Contains anything you consider appropriate for your builder
-- `/sources.yaml` - Holds a list of source repositories for schemes and templates
-- `/sources/schemes/list.yaml` - Holds a list of scheme repositories
-- `/sources/templates/list.yaml` - Holds a list of template repositories
-- `/schemes/[name]/*.yaml` - A scheme file (there may be multiples of these)
-- `/templates/[name]/templates/*.mustache` - A template file (there may be multiples of these)
-- `/templates/[name]/templates/config.yaml` - A template configuration file
+
+### Schemes Repository
+
+The schemes repo should either be stored in a common location (perhaps referred to by environment variable or command line flag) or dynamically embedded in the builder.
+
+- `/*.yaml`
+
+### Template Repository
+
+Each template repository should have a templates folder containing a config.yaml and any needed mustache template files.
+
+- `/templates/*.mustache` - A template file (there may be multiples of these)
+- `/templates/config.yaml` - A template configuration file
 
 ## Workflow
-The first job a just-installed builder has is to populate a list of scheme sources and template sources. It does this by parsing the `/sources.yaml` file and using Git to clone the repositories defined within to `/sources`. Next, the builder will parse the downloaded `/sources/schemes/list.yaml` and use Git to clone the defined repositories to `/schemes`. Finally, the builder will parse the downloaded `/sources/templates/list.yaml` and use Git to clone the defined repositories to `/templates`. This task is performed by the `builder update` command, which can be used to update sources, schemes, and templates.
+The first thing a builder needs to do is parse all the scheme files from the schemes repository (as defined in the [file guidelines](https://github.com/chriskempson/base16/blob/master/file.md)). All files matching the pattern `*.yaml` should be loaded from the root of the schemes repository.
 
-When building themes by running `builder` without any arguments, a base16 builder should first clear out any old output then iterate through all the scheme files in `/schemes` and for each scheme should iterate through all the template files in `/templates` producing themes that will be output to the template directories specified in `/templates/template_name/template/config.yaml`. The theme filename should look like `base16-[slug][extension]`. Where the slug is taken from the scheme filename made lowercase with spaces replaced with dashes and extension is taken from `/template/config.yaml`.
+When building a target template repository, a base16 builder should first clear out any old output. Next, for all templates defined in the template repo's config file (located at `/templates/config.yaml`), the builder should iterate through all the defined schemes and output matching files. The built filename should look like `[output-dir]/base16-[slug][extension]`, where the slug is taken from the scheme filename made lowercase with spaces replaced with dashes and both the extension and output-dir are taken from `/template/config.yaml`.
 
-In the case where schemes share the same name, a builder will overwrite a perviously generated template file. Should this happen, a builder should show warning messages listing the overwritten template files.
+In the case where schemes share the same slug, a builder will overwrite files perviously generated from the template. Should this happen, a builder should show warning messages listing the overwritten files.
 
 ## Template Variables
 A builder should provide the following variables to a template file:
@@ -45,3 +53,5 @@ There is no outline for a recommended code structure that a base16 theme builder
 
 ## Considerations
 Mustache was chosen as the templating language due to its simplicity and widespread adoption across languages. YAML was chosen to describe scheme and configuration files for the same reasons.
+
+The core scheme repository was based off the single scheme repository so builders supporting v0.8-v0.9 of the spec can continue to function without changes.

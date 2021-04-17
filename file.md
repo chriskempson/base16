@@ -4,11 +4,11 @@ Base16 specifies the format of two types of files: scheme files, used for defini
 ## Template Config Files
 Template files reside in a templates `templates` folder and have the name `config.yaml`. These files have the following example structure:
 
-    default: 
+    default:
         extension: .file-extension
         output: output-directory-name
-        
-    additional: 
+
+    additional:
         extension: .file-extension
         output: output-directory-name
 
@@ -36,4 +36,4 @@ Scheme files have the following example structure:
     base0E: "eeeeee"
     base0F: "ffffff"
 
-Hexadecimal color values should not be preceded by a "#".
+Hexadecimal color values may optionally be preceded by a "#".

@@ -165,13 +165,18 @@ To add your own scheme, submit a pull request to https://github.com/chriskempson
 
 **Repository naming scheme: base16-builder-[language]** (with dashes as separators). The separate headings are the latest versions of the spec supported by each builder.
 
+### 0.10.0 (Mar 20, 2021)
+
+- Simplify repo structure and builder responsibilities
+
+* [Base 16 Builder Go](https://github.com/belak/base16-builder-go) maintained by [belak](https://github.com/belak)
+
 ### 0.9.1 (Jun 15, 2019)
 
 - Make baseXX-hex-bgr variables available to templates
 - Warn when a template file has been overwritten
 
 * [Base 16 Builder Ansible](https://github.com/mnussbaum/base16-builder-ansible) maintained by [mnussbaum](https://github.com/mnussbaum)
-* [Base 16 Builder Go](https://github.com/belak/base16-builder-go) maintained by [belak](https://github.com/belak)
 * [Base 16 Builder PHP](https://github.com/chriskempson/base16-builder-php) maintained by [chriskempson](https://github.com/chriskempson)
 * [Base 16 Builder Python](https://github.com/InspectorMustache/base16-builder-python) maintained by [InspectorMustache](https://github.com/InspectorMustache)
 * [Base 16 Builder Rust](https://github.com/ilpianista/base16-builder-rust) maintained by [ilpianista](https://github.com/ilpianista)
