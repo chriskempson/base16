@@ -13,9 +13,13 @@ A base16 builder is an application that can build syntax highlighting definition
 - `/templates/[name]/templates/config.yaml` - A template configuration file
 
 ## Workflow
-The first job a just-installed builder has is to populate a list of scheme sources and template sources. It does this by parsing the `/sources.yaml` file and using Git to clone the repositories defined within to `/sources`. Next, the builder will parse the downloaded `/sources/schemes/list.yaml` and use Git to clone the defined repositories to `/schemes`. Finally, the builder will parse the downloaded `/sources/templates/list.yaml` and use Git to clone the defined repositories to `/templates`. This task is performed by the `builder update` command, which can be used to update sources, schemes, and templates.
+The first job a just-installed builder has is to populate a list of scheme sources and template sources. It does this by parsing the `/sources.yaml` file and using Git to clone the repositories defined within to `/sources`. Next, the builder will parse the downloaded `/sources/schemes/list.yaml` and use Git to clone the defined repositories to `/schemes`. Finally, the builder will parse the downloaded `/sources/templates/list.yaml` and use Git to clone the defined repositories to `/templates`. This task is performed by the `update` command, which can be used to update sources, schemes, and templates.
 
-When building themes by running `builder` without any arguments, a base16 builder should first clear out any old output then iterate through all the scheme files in `/schemes` and for each scheme should iterate through all the template files in `/templates` producing themes that will be output to the template directories specified in `/templates/template_name/template/config.yaml`. The theme filename should look like `base16-[slug][extension]`. Where the slug is taken from the scheme filename made lowercase with spaces replaced with dashes and extension is taken from `/template/config.yaml`.
+```sh
+$ base16-builder update
+```
+
+When building themes by running the builder without any arguments, a base16 builder should first clear out any old output then iterate through all the scheme files in `/schemes` and for each scheme should iterate through all the template files in `/templates` producing themes that will be output to the template directories specified in `/templates/template_name/template/config.yaml`. The theme filename should look like `base16-[slug][extension]`. Where the slug is taken from the scheme filename made lowercase with spaces replaced with dashes and extension is taken from `/template/config.yaml`.
 
 In the case where schemes share the same name, a builder will overwrite a perviously generated template file. Should this happen, a builder should show warning messages listing the overwritten template files.
 
