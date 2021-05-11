@@ -77,7 +77,7 @@ To add your own template, submit a pull request to https://github.com/chriskemps
 * [Window Maker](https://github.com/d-torrance/base16-wmaker) maintained by [d-torrance](https://github.com/d-torrance)
 * [Windows Command Prompt](https://github.com/iamthad/base16-windows-command-prompt) maintained by [iamthad](https://github.com/iamthad)
 * [Windows Terminal](https://github.com/wuqs-net/base16-windows-terminal) maintained by [wuqs-net](https://github.com/wuqs-net)
-* [Wofi](https://hg.sr.ht/~scoopta/wofi) maintained by [knezi](https://sr.ht/~knezi)
+* [Wofi](https://sr.ht/~knezi/base16-wofi/) maintained by [knezi](https://sr.ht/~knezi)
 * [Xcode](https://github.com/kreeger/base16-xcode) maintained by [kreeger](https://github.com/kreeger)
 * [XFCE4 Terminal](https://github.com/afq984/base16-xfce4-terminal) maintained by [afq984](https://github.com/afq984)
 * [Xresources](https://github.com/binaryplease/base16-xresources) maintained by [binaryplease](https://github.com/binaryplease)
