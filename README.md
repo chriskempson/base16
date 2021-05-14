@@ -147,6 +147,7 @@ To add your own scheme, submit a pull request to https://github.com/chriskempson
 * [Snazzy](https://github.com/h404bi/base16-snazzy-scheme) maintained by [h404bi](https://github.com/h404bi)
 * [Solarflare](https://github.com/mnussbaum/base16-solarflare-scheme) maintained by [mnussbaum](https://github.com/mnussbaum)
 * [Solarized](https://github.com/aramisgithub/base16-solarized-scheme) maintained by [aramisgithub](https://github.com/aramisgithub)
+* [Stella](https://github.com/Shrimpram/base16-stella-scheme) maintained by [Shrimpram](https://github.com/shrimpram/)
 * [Summercamp](https://github.com/zoefiri/base16-summercamp) maintained by [zoe firi](https://github.com/zoefiri)
 * [Summerfruit](https://github.com/cscorley/base16-summerfruit-scheme) maintained by [cscorley](https://github.com/cscorley)
 * [Synth Midnight](https://github.com/michael-ball/base16-synth-midnight-scheme) maintained by [michael-ball](https://github.com/michael-ball)
