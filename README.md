@@ -69,7 +69,7 @@ To add your own template, submit a pull request to https://github.com/chriskemps
 * [TextMate & Sublime Text](https://github.com/chriskempson/base16-textmate) maintained by [chriskempson](https://github.com/chriskempson)
 * [Tilix](https://github.com/karlding/base16-tilix) maintained by [karlding](https://github.com/karlding)
 * [Vim-airline](https://github.com/dawikur/base16-vim-airline-themes) maintained by [dawikur](https://github.com/dawikur)
-* [Vim](https://github.com/chriskempson/base16-vim) maintained by [chriskempson](https://github.com/chriskempson)
+* [Vim](https://github.com/fnune/base16-vim) maintained by [fnune](https://github.com/fnune)
 * [Vimiv](https://github.com/karlch/base16-vimiv) maintained by [karlch](https://github.com/karlch/)
 * [Vis](https://github.com/pshevtsov/base16-vis) maintained by [pshevtsov](https://github.com/pshevtsov)
 * [VSCode](https://github.com/golf1052/base16-vscode) maintained by [golf1052](https://github.com/golf1052)
