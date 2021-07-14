@@ -17,7 +17,7 @@ The first job a just-installed builder has is to populate a list of scheme sourc
 
 When building themes by running `builder` without any arguments, a base16 builder should first clear out any old output then iterate through all the scheme files in `/schemes` and for each scheme should iterate through all the template files in `/templates` producing themes that will be output to the template directories specified in `/templates/template_name/template/config.yaml`. The theme filename should look like `base16-[slug][extension]`. Where the slug is taken from the scheme filename made lowercase with spaces replaced with dashes and extension is taken from `/template/config.yaml`.
 
-In the case where schemes share the same name, a builder will overwrite a perviously generated template file. Should this happen, a builder should show warning messages listing the overwritten template files.
+In the case where schemes share the same name, a builder will overwrite a previously generated template file. Should this happen, a builder should show warning messages listing the overwritten template files.
 
 ## Template Variables
 A builder should provide the following variables to a template file:
