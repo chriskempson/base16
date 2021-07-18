@@ -49,6 +49,7 @@ To add your own template, submit a pull request to https://github.com/chriskemps
 * [mako](https://github.com/Eluminae/base16-mako) maintained by [Eluminae](https://github.com/Eluminae)
 * [MinTTY](https://github.com/geoffstokes/base16-mintty) maintained by [geoffstokes](https://github.com/geoffstokes)
 * [MonoDevelop](https://github.com/netpyoung/base16-monodevelop) maintained by [netpyoung](https://github.com/netpyoung)
+* [Neovim](https://github.com/wincent/base16-nvim) maintained by [wincent](https://github.com/wincent)
 * [Polybar](https://github.com/Misterio77/base16-polybar) maintained by [Misterio77](https://github.com/Misterio77)
 * [Prism](https://github.com/atelierbram/base16-prism) maintained by [atelierbram](https://github.com/atelierbram)
 * [prompt-toolkit & ipython](https://github.com/memeplex/base16-prompt-toolkit) maintained by [memeplex](https://github.com/memeplex)
