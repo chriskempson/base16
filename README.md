@@ -9,7 +9,7 @@ A framework for building themes based on carefully chosen syntax highlighting us
 
 ## Resource Repositories
 * [Colour Schemes](https://github.com/chriskempson/base16-schemes-source)
-* [Templates for Editors and Tools](https://github.com/chriskempson/base16-templates-source)
+* [Templates for Editor and Tool Themes](https://github.com/chriskempson/base16-templates-source)
 * [A List of Builders](https://github.com/chriskempson/base16-builders)
 
 ## Tools for using Base16
