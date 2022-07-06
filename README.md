@@ -1,11 +1,11 @@
 # ![Base16](logo.png)
 
-An architecture for building themes based on carefully chosen syntax highlighting using a base of sixteen colors. Base16 provides a set of guidelines detailing how to style syntax and how to code a _builder_ for compiling Base16 _schemes_ and _templates_.
+An framework for building themes based on carefully chosen syntax highlighting using a base of sixteen colors. Base16 provides a set of guidelines detailing how to style syntax and how to code a _builder_ for compiling Base16 _schemes_ and _templates_.
 
 ## Documentation
-* [Styling Guidelines](https://github.com/chriskempson/base16/blob/master/styling.md)
-* [Builder Guidelines](https://github.com/chriskempson/base16/blob/master/builder.md)
-* [File Guidelines](https://github.com/chriskempson/base16/blob/master/file.md)
+* [Guidelines for Syntax Highlighting](https://github.com/chriskempson/base16/blob/master/styling.md)
+* [Guidelines for Builders](https://github.com/chriskempson/base16/blob/master/builder.md)
+* [Guidelines for Scheme and Template Files](https://github.com/chriskempson/base16/blob/master/file.md)
 
 ## Resource Repositories
 * [Colour Schemes](https://github.com/chriskempson/base16-schemes-source)
