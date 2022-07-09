@@ -1,7 +1,7 @@
 # ![Base16](logo.png)
-Not a theme, but a framework for building [Tomorrow](https://github.com/chriskempson/tomorrow-theme) styled themes using a base of sixteen colours. Since _August 2012_, Base16 has provided a minimal set of guidelines that explain how to [style syntax](https://github.com/chriskempson/base16/blob/main/styling.md) and [how to compile](https://github.com/chriskempson/base16/blob/main/builder.md) Base16 [_schemes_ and _templates_](https://github.com/chriskempson/base16/blob/main/file.md).
+Not a theme, but a framework for building [Tomorrow](https://github.com/chriskempson/tomorrow-theme) styled themes using a base of sixteen colours. Since _August 2012_, Base16 has provided a minimal set of guidelines that explain how to [style syntax](https://github.com/chriskempson/base16/blob/main/styling.md) and [how to build](https://github.com/chriskempson/base16/blob/main/builder.md) Base16 [_schemes_ and _templates_](https://github.com/chriskempson/base16/blob/main/file.md).
 
-## Design Limitations
+## Limitations
 Base16 was designed with the following limitations to ensure the project remains simple and keeps a small scope:
 * A 16 colour palette of 8 shades and 8 accents
 * All themes produced are the same apart from variations in colour
@@ -10,7 +10,7 @@ Base16 was designed with the following limitations to ensure the project remains
 ## Resources
 * [Theme Templates](https://github.com/chriskempson/base16-templates-source) (plus pre-compiled themes)
 * [Colour Schemes](https://github.com/chriskempson/base16-schemes-source)
-* [Compilers](https://github.com/chriskempson/base16-builder-php)
+* [Builders](https://github.com/chriskempson/base16-builder-php)
 
 ## Third-party Tools
 * [auto-base16-theme](https://github.com/makuto/auto-base16-theme) - A command line tool to create a base16 theme from an input image's colour palette.
