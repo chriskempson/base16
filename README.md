@@ -5,7 +5,8 @@ Not a theme, but a framework for building [Tomorrow](https://github.com/chriskem
 Base16 was designed with the following limitations to ensure the project remains simple and keeps a small scope:
 * A 16 colour palette of 8 shades and 8 accents
 * All themes produced are the same apart from variations in colour
-* Rigid syntax highlighting meaning you can't change the colour of one element without affecting another
+* You can't change the colour of one element without affecting another
+* Builders are very simple and have one job
 
 ## Resources
 * [Theme Templates](https://github.com/chriskempson/base16-templates-source) (plus pre-compiled themes)
