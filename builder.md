@@ -1,30 +1,27 @@
-# Builder Guidelines
-**Version 0.9.1**
+# Base 16 Builder Specification
+**Version 1.0.0 / 2022-07-05** 
 
-A base16 _builder_ is an application that can build _syntax highlighting definition files_ for text editors and tools, using base16 scheme files which contain a collection of colours and base16 template files which contain syntax highlighting rules. A builder uses Git as the mechanism to download and keep up-to-date syntax files and template files.
+A Base16 _builder_ is an application that can compile _scheme_ and _template_ files to produce a
+theme file that can be used to apply custom colours to an application.
 
-## File Structure
-- `/` - Contains anything you consider appropriate for your builder
-- `/sources.yaml` - Holds a list of source repositories for schemes and templates
-- `/sources/schemes/list.yaml` - Holds a list of scheme repositories
-- `/sources/templates/list.yaml` - Holds a list of template repositories
-- `/schemes/[name]/*.yaml` - A scheme file (there may be multiples of these)
-- `/templates/[name]/templates/*.mustache` - A template file (there may be multiples of these)
-- `/templates/[name]/templates/config.yaml` - A template configuration file
+## Process
+A builder accepts _scheme_ data in YAML format from 
+[Standard Input](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)) 
+in order to create the tag variables needed to parse a _template_ file. The finished result (an 
+application theme) is sent to 
+[Standard Output](https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)). Any 
+errors are sent to [Standard Error](https://en.wikipedia.org/wiki/Standard_streams#Standard_error_(stderr)).
 
-## Workflow
-The first job a just-installed builder has is to populate a list of scheme sources and template sources. It does this by parsing the `/sources.yaml` file and using Git to clone the repositories defined within to `/sources`. Next, the builder will parse the downloaded `/sources/schemes/list.yaml` and use Git to clone the defined repositories to `/schemes`. Finally, the builder will parse the downloaded `/sources/templates/list.yaml` and use Git to clone the defined repositories to `/templates`. This task is performed by the `builder update` command, which can be used to update sources, schemes, and templates.
+    cat tomorrow-night.yaml | base16-builder --template vim.mustache > tomorrow-night.vim
 
-When building themes by running `builder` without any arguments, a base16 builder should first clear out any old output then iterate through all the scheme files in `/schemes` and for each scheme should iterate through all the template files in `/templates` producing themes that will be output to the template directories specified in `/templates/template_name/template/config.yaml`. The theme filename should look like `base16-[slug][extension]`. Where the slug is taken from the scheme filename made lowercase with spaces replaced with dashes and extension is taken from `/template/config.yaml`.
-
-In the case where schemes share the same name, a builder will overwrite a perviously generated template file. Should this happen, a builder should show warning messages listing the overwritten template files.
-
-## Template Variables
-A builder should provide the following variables to a template file:
+## Template Tags 
+A builder must provide the following tag variables when parsing a template file:
 
 - `scheme-name` - obtained from the scheme file
 - `scheme-author` - obtained from the scheme file
-- `scheme-slug` - obtained from the scheme filename, as described above
+- `scheme-slug` - obtained from the `scheme-name`, lowercased with dashes for spaces
+- `base00-hex` to `base0F-hex` - obtained from the scheme file e.g "7cafc2"
+- `base00-hex-bgr` to `base0F-hex-bgr` - built from the hex values reversed e.g "c2af7c"
 - `base00-hex-r` to `base0F-hex-r` - built from the hex value in the scheme file e.g "7c"
 - `base00-hex-g` to `base0F-hex-g` - built from the hex value in the scheme file e.g "af"
 - `base00-hex-b` to `base0F-hex-b` - built from the hex value in the scheme file e.g "c2"
@@ -34,14 +31,11 @@ A builder should provide the following variables to a template file:
 - `base00-dec-r` to `base0F-dec-r` - converted from the rgb value in the scheme file e.g "0.87..."
 - `base00-dec-g` to `base0F-dec-g` - converted from the rgb value in the scheme file e.g "0.50..."
 - `base00-dec-b` to `base0F-dec-b` - converted from the rgb value in the scheme file e.g "0.21..."
-
-Builders should also provide the following variables for convenience:
-
-- `base00-hex` to `base0F-hex` - obtained from the scheme file e.g "7cafc2"
-- `base00-hex-bgr` to `base0F-hex-bgr` - built from a reversed version of all the hex values e.g "c2af7c"
-
-## Code Structure
-There is no outline for a recommended code structure that a base16 theme builder should follow but a design goal should be to keep the application as simple as possible providing only the functionality described in this document.
+- `base00-hsl-h` to `base0F-hsl-h` - converted from the hex value in the scheme file e.g "0.87..."
+- `base00-hsl-s` to `base0F-hsl-s` - converted from the hex value in the scheme file e.g "0.50..."
+- `base00-hsl-l` to `base0F-hsl-l` - converted from the hex value in the scheme file e.g "0.21..."
 
 ## Considerations
-Mustache was chosen as the templating language due to its simplicity and widespread adoption across languages. YAML was chosen to describe scheme and configuration files for the same reasons.
+[Mustache](https://mustache.github.io) was chosen as the templating language due to its simplicity 
+and widespread support across languages. [Yaml](https://yaml.org) was chosen to describe scheme 
+files for the same reasons.
