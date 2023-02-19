@@ -21,6 +21,7 @@ Base16 was designed with the following limitations to ensure the project remains
 * [flavours](https://github.com/misterio77/flavours) - A command line tool to manage and globally apply base16 templates by specifying a scheme name.
 * [Themix/Oomox](https://github.com/themix-project/oomox) - Graphical application for generating different colour variations of a Arc, Materia and Oomox themes (GTK2, GTK3 and others), Archdroid, Gnome-Colours and Numix icons, and terminal palette. Base16 plugin allows to open Base16 YAML files a export both Base16 and its own themes using Base16 Mustache templates.
 * [base16-spectrum-generator](https://github.com/alexmirrington/base16-spectrum-generator) - A Python script for generating `.png` files showcasing the colours in a base16 theme.
+* [leet haker colors](https://github.com/crazymonkyyy/leet-haker-colors) - a repo of base 16 colors as csv files
 
 ## Used By
 * [Visual Studio Code](https://code.visualstudio.com) - Tommorrow Night Blue theme included by default.
